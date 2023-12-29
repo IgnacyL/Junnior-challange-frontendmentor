@@ -1,0 +1,127 @@
+@mixin small-devices {
+  .history-section,
+  .clipboard-section {
+    padding: 0 1rem;
+    h1 {
+      font-size: 2.8rem;
+      width: 80%;
+    }
+    p {
+      width: 98%;
+      font-size: 1.8rem;
+    }
+    .btns {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      &__one {
+        width: 100%;
+      }
+    }
+  }
+  /////////////ORGANIZE SECTION ////////////////
+
+  .organize {
+    h1 {
+      font-size: 2.8rem;
+      width: 80%;
+    }
+    p {
+      width: 90%;
+    }
+  }
+
+  /////////////OPTION SECTION ////////////////
+
+  .options {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    max-height: 100rem;
+    img {
+      width: 35rem;
+      left: 0;
+    }
+    .item-container {
+      gap: 4rem;
+      .item {
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+  /////////////ANYWHERE SECTION ////////////////
+  .anywhere {
+    .upper-text {
+      p {
+        width: 95%;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+    .image {
+      height: 20rem;
+    }
+  }
+  /////////////Information Section ////////////////
+  .information {
+    .logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6rem;
+
+      img {
+        max-width: 20rem;
+      }
+    }
+  }
+  .information-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5rem;
+
+    .item {
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  /////////////Clipboard Section ////////////////
+  .clipboard-section {
+    margin-top: 15rem;
+    h1 {
+      width: 90%;
+    }
+    p {
+      width: 91%;
+    }
+  }
+  /////////////FOOTER ////////////////
+  footer {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 4rem;
+      .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        column-gap: 4rem;
+      }
+      .icons {
+        display: flex;
+        gap: 2rem;
+        font-size: 3rem;
+      }
+    }
+  }
+}

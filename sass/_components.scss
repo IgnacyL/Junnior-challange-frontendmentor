@@ -1,0 +1,19 @@
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.7rem;
+  height: 5.6rem;
+  border-radius: 2.5rem;
+}
+
+@mixin before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -11;
+}
